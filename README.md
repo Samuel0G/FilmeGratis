@@ -1,121 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sites Filmes Gratis</title>
-    <link rel="stylesheet" href="estilosFilmes.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .highlighted-movie {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            font-size: 15px;
+            font-family: "Helvetica", sans-serif;
+            max-width: 500px;
+        }
+
+        .catalog {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .movie {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            max-width: 200px;
+        }
+
+        .movie h3 {
+            font-size: 18px;
+        }
+
+        .movie img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .movie p {
+            color: #666;
+        }
+
+        .movie button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Filmes Grátis</title>
 </head>
 <body>
     <header>
-        <h1>Filmes Gratis Online</h1>
+        <h1>Filmes Grátis</h1>
     </header>
-    <header>
-        <nav>
-            <ul>
-                <li class="menu-item"><a href="#home">Home</a></li>
-                <li class="menu-item"><a href="#cadastro">Cadastro</a></li>
-                <li class="menu-item"><a href="#relatorios">Relatórios</a></li>
-                <li class="menu-item"><a href="#grid">Grid</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="filme">
-            <img src="imagem_filme1.jpg" alt="Filme 1">
-            <h2>Filme 1</h2>
-            <p>Descrição do Filme 1.</p>
-            <a href="link_para_o_filme1.mp4" target="_blank">Assistir</a>
-        </section>
-        <section class="filme">
-            <img src="imagem_filme2.jpg" alt="Filme 2">
-            <h2>Filme 2</h2>
-            <p>Descrição do Filme 2.</p>
-            <a href="link_para_o_filme2.mp4" target="_blank">Assistir</a>
-        </section>
-        
-    </main>
-    <footer>
-        <p>&copy; 2023 Meu Site de Filmes</p>
-    </footer>
+    <nav>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="#">Home</a>
+    </nav>
+    <div class="highlighted-movie">
+        <h2>Filme em Destaque</h2>
+        <img src="baribe.jpg" alt="Nome do Filme">
+        <p>No fabuloso live-action da boneca mais famosa do mundo, acompanhamos o dia a dia em Barbieland - o mundo mágico das Barbies, onde todas as versões da boneca vivem em completa harmonia e suas únicas preocupações são encontrar as melhores roupas para passear com as amigas e curtir intermináveis festas.</p>
+        <button>Assistir Agora</button>
+    </div>
+    <h2>Filmes</h2>
+    <div class="catalog">
+        <div class="movie">
+            <h3>Shrek 2</h3>
+            <img src="sherek.jpg" alt="Filme 1">
+            <button>Assistir</button>
+        </div>
+        <div class="movie">
+            <h3>Gato de Botas</h3>
+            <img src="Gatodebotas.jpeg" alt="Filme 2">
+            <button>Assistir</button>
+        </div>
+    </div>
 </body>
 </html>
-
-
-</css>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-h1 {
-    margin: 0;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.filme {
-    margin-bottom: 20px;
-}
-
-.filme img {
-    max-width: 100%;
-    height: auto;
-}
-
-.filme h2 {
-    margin: 10px 0;
-}
-
-.filme p {
-    margin: 0;
-}
-
-.filme a {
-    display: block;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 0;
-    border-radius: 5px;
-}
-
-.filme a:hover {
-    background-color: #555;
-}
-/* Estilize o menu para exibir os itens lado a lado */
-.menu-item {
-    display: inline-block;
-    margin-right: 10px;  
-}
-
-
-.menu-item a {
-    text-decoration: none;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.menu-item a:hover {
-    background-color: #555;
-}
-</css>
