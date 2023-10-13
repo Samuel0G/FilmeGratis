@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,17 @@
             margin: 0;
             padding: 0;
         }
-
+ <style>
         header {
             background-color: #333;
             color: #fff;
             padding: 10px;
         }
-
+ <style>
         nav {
             margin-top: 10px;
         }
-
+ <style>
         nav a {
             text-decoration: none;
             color: #333;
@@ -31,7 +31,7 @@
             border: 1px solid #333;
             border-radius: 5px;
         }
-
+ <style>
         .highlighted-movie {
             background-color: #fff;
             padding: 20px;
@@ -42,13 +42,13 @@
             font-family: "Helvetica", sans-serif;
             max-width: 500px;
         }
-
+ <style>
         .catalog {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-
+ <style>
         .movie {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -57,20 +57,20 @@
             margin: 10px;
             max-width: 200px;
         }
-
+ <style>
         .movie h3 {
             font-size: 18px;
         }
-
+ <style>
         .movie img {
             max-width: 100%;
             border-radius: 5px;
         }
-
+ <style>
         .movie p {
             color: #666;
         }
-
+ <style>
         .movie button {
             background-color: #333;
             color: #fff;
